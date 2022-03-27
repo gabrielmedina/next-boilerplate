@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { LayoutDefault } from 'src/components/layouts'
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Next Boilerplate</h1>
+      <LayoutDefault>
+        <h1 style={{ margin: 0 }}>Next Boilerplate</h1>
+      </LayoutDefault>
     </>
   )
 }
